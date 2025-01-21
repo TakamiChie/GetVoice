@@ -8,7 +8,7 @@
       "name": "Edgeで拡張機能をデバッグ",
       "type": "pwa-msedge",
       "request": "launch",
-      "url": "https://setouchiibase.jp/pub/event/detail/f16dq9vehauotki8sn", // 拡張機能が影響を与えるURLを指定
+      "url": "https://takamichie.notion.site/SBCast-135-17f60d1e6e798002b9eff66d79c774bd?pvs=4", // 拡張機能が影響を与えるURLを指定
       "webRoot": "${workspaceFolder}",
       "runtimeArgs": [
         "--load-extension=${workspaceFolder}" // 拡張機能のフォルダを指定
