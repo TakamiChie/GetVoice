@@ -1,13 +1,14 @@
-# chrome-extension-project
+# GetVoice
 
-このプロジェクトは、Google Chrome用の拡張機能を作成するためのものです。以下に、プロジェクトの構成と各ファイルの役割を説明します。
+PC上にインストールされているVoiceVoxを使ってWebページの文章を音声化する拡張機能です。
+PCにVoiceVoxがインストールされていてサーバー機能が有効になっていることが動作条件となります。
 
 ## プロジェクト構成
 
 ```
 chrome-extension-project
 ├── src
-│   ├── background.js        // 拡張機能のバックグラウンドスクリプト
+│   ├── service-worker.js   // 拡張機能のバックグラウンドスクリプト
 │   ├── content.js          // コンテンツスクリプト
 │   ├── popup
 │   │   ├── popup.html      // ポップアップのHTML構造
@@ -19,7 +20,7 @@ chrome-extension-project
 
 ## 各ファイルの説明
 
-- **src/background.js**: 拡張機能のライフサイクル管理やイベントリスナーを設定します。
+- **src/service-worker.js**: 拡張機能のライフサイクル管理やイベントリスナーを設定します。
 - **src/content.js**: ウェブページに対して直接操作を行うためのコードが含まれています。
 - **src/popup/popup.html**: ユーザーインターフェースの要素を定義しています。
 - **src/popup/popup.js**: ユーザーのアクションに応じた処理を実装します。
