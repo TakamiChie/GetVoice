@@ -1,0 +1,18 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Edgeで拡張機能をデバッグ",
+      "type": "pwa-msedge",
+      "request": "launch",
+      "url": "https://setouchiibase.jp/pub/event/detail/f16dq9vehauotki8sn", // 拡張機能が影響を与えるURLを指定
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--load-extension=${workspaceFolder}" // 拡張機能のフォルダを指定
+      ]
+    }
+  ]
+}
